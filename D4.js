@@ -153,4 +153,4 @@ function giveMeRandom(n){
     const randomNumbers = []
 return randomNumbers.push(n)
 }
-console.log(giveMeRandom(Math.floor(Math.random()* 11)))
+console.log(" This is a random number from 0 to 10 : " , giveMeRandom(Math.floor(Math.random()* 11)))
