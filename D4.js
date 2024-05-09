@@ -140,13 +140,14 @@ console.log(upperFirst("embrace the journey."))
 console.log("----- CUT STRING -----")
 
 function cutString(string){
-    let splitted = string.split(" ")
-    return splitted.slice(1)
+ //   let splitted = string.split(" ")
+    return string.slice(7)
 }
 console.log(cutString("embrace the journey."))
 /* ESERCIZIO 10
  Scrivi una funzione di nome "giveMeRandom", che accetta come parametro un numero n e ritorna un'array contenente n numeri casuali inclusi tra 0 e 10.
 */
+console.log("----- RANDOM NUMBER -----")
 
 function giveMeRandom(n){
     const randomNumbers = []
