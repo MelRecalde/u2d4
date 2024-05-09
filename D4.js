@@ -121,7 +121,7 @@ console.log(reverseString("HELLO!"))
 */
 
 console.log("----- UPPER FIRST-----")
-
+/*
 function upperFirst(string){
     let splitted = string.split(" ");
     console.log(splitted)
@@ -131,6 +131,8 @@ function upperFirst(string){
     return splitted.slice().toUpperCase()
 }
 console.log(upperFirst("embrace the journey."))
+*/
+
 /* ESERCIZIO 9
  Scrivi una funzione di nome "cutString", che riceve come parametro una stringa. La funzione deve creare una nuova stringa senza il primo e l'ultimo carattere
  della stringa originale.
@@ -138,11 +140,16 @@ console.log(upperFirst("embrace the journey."))
 console.log("----- CUT STRING -----")
 
 function cutString(string){
-
+    let splitted = string.split(" ")
+    return splitted.slice(1)
 }
 console.log(cutString("embrace the journey."))
 /* ESERCIZIO 10
  Scrivi una funzione di nome "giveMeRandom", che accetta come parametro un numero n e ritorna un'array contenente n numeri casuali inclusi tra 0 e 10.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+function giveMeRandom(n){
+    const randomNumbers = []
+return randomNumbers.push(n)
+}
+console.log(giveMeRandom(Math.floor(Math.random()* 11)))
