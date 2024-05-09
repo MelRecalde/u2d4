@@ -15,6 +15,7 @@ console.log("Rectangle area : ", result)
  la loro somma moltiplicata per tre.
 */
 console.log("----- CRAZYSUM -----")
+
 function crazySum(num1, num2) {
     let result = num1 + num2
     // console.log(result)
@@ -34,8 +35,8 @@ console.log("2.The result is : ", crazySum(1, 2))
  Scrivi una funzione di nome "crazyDiff" che calcola la differenza assoluta tra un numero fornito come parametro e 19.
  Deve inoltre tornare la differenza assoluta moltiplicata per tre qualora il numero fornito sia maggiore di 19.
 */
-
 console.log("----- CRAZYDIFF -----")
+
 function crazyDiff(a) {
     const b = 19
     const diff = Math.abs(a - b)
@@ -58,8 +59,8 @@ console.log("1.The result is : ", crazyDiff(11))
 
 console.log("----- BOUNDARY -----")
 
-function boundary(n){
-    if(n >= 20 && n <= 100 || n === 400) {
+function boundary(n) {
+    if (n >= 20 && n <= 100 || n === 400) {
         return true
     } else {
         return false
@@ -76,8 +77,8 @@ console.log("This number is a number from 20 and 100 or equal to 400 : ", bounda
 */
 
 console.log("----- BOUNDARY -----")
-function epify(string){
-    if(string.startsWith("EPICODE")) {
+function epify(string) {
+    if (string.startsWith("EPICODE")) {
         return string
     } else {
         return (string + " Epicode")
@@ -93,8 +94,8 @@ console.log(epify("Hello World this is"))
 */
 
 console.log("----- CHECK 3 AND 7-----")
-function check3and7(number){
-    if(number % 3 == 0 || number % 7 == 0){
+function check3and7(number) {
+    if (number % 3 == 0 || number % 7 == 0) {
         return true
     } else {
         return false
@@ -109,7 +110,7 @@ console.log(check3and7(10))
 
 console.log("-----REVERSE-----")
 
-function reverseString(stringa){
+function reverseString(stringa) {
     return stringa.split("").reverse().join("");
 }
 
@@ -121,17 +122,19 @@ console.log(reverseString("HELLO!"))
 */
 
 console.log("----- UPPER FIRST-----")
-/*
-function upperFirst(string){
-    let splitted = string.split(" ");
-    console.log(splitted)
-    for (let index = 0; index < splitted.length; index++) {
+
+function upperFirst(string) {
+    //let splitted = string.split(" ");
+    //console.log(splitted)
+    /*for (let index = 0; index < splitted.length; index++) {
         const elemento = splitted[index]
-    }
-    return splitted.slice().toUpperCase()
+    }*/
+ //   return string.replace("embrace the journey", "Embrace The Journey")
+ //const splitted = string.split("")
+ //console.log(splitted)
 }
 console.log(upperFirst("embrace the journey."))
-*/
+
 
 /* ESERCIZIO 9
  Scrivi una funzione di nome "cutString", che riceve come parametro una stringa. La funzione deve creare una nuova stringa senza il primo e l'ultimo carattere
@@ -139,8 +142,8 @@ console.log(upperFirst("embrace the journey."))
 */
 console.log("----- CUT STRING -----")
 
-function cutString(string){
- //   let splitted = string.split(" ")
+function cutString(string) {
+    //   let splitted = string.split(" ")
     return string.slice(7)
 }
 console.log(cutString("embrace the journey."))
@@ -149,8 +152,9 @@ console.log(cutString("embrace the journey."))
 */
 console.log("----- RANDOM NUMBER -----")
 
-function giveMeRandom(n){
+function giveMeRandom(n) {
     const randomNumbers = []
-return randomNumbers.push(n)
+    randomNumbers.push(n)
+    return randomNumbers
 }
-console.log(" This is a random number from 0 to 10 : " , giveMeRandom(Math.floor(Math.random()* 11)))
+console.log(" This is a random number from 0 to 10 : ", giveMeRandom(Math.floor(Math.random() * 11)))
