@@ -124,16 +124,26 @@ console.log(reverseString("HELLO!"))
 console.log("----- UPPER FIRST-----")
 
 function upperFirst(string) {
-    //let splitted = string.split(" ");
     //console.log(splitted)
     /*for (let index = 0; index < splitted.length; index++) {
         const elemento = splitted[index]
     }*/
- //   return string.replace("embrace the journey", "Embrace The Journey")
- //const splitted = string.split("")
- //console.log(splitted)
+    //   return string.replace("embrace the journey", "Embrace The Journey")
+    const splitted = string.split(' ') 
+    //console.log(splitted)
+    let upper = [];
+    for (let i = 0; i < splitted.length; i++) {
+       // return upper += splitted[i].charAt(0).toUpperCase() + splitted[i].slice(1)
+       let firstChar = splitted[i].charAt(0)
+       let uppercaseChar = firstChar.toUpperCase()
+       let cutString = splitted[i].slice(1)
+       let finalWord = uppercaseChar + cutString
+       upper.push(finalWord)
+    }
+    console.log(upper.join(" "))
 }
-console.log(upperFirst("embrace the journey."))
+
+upperFirst("embrace the journey.")
 
 
 /* ESERCIZIO 9
